@@ -12,7 +12,7 @@
     <artifactId>spring-mvn</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-mvn</name>
-    <description>Demo for SPring MVC</description>
+    <description>Demo for Spring MVC</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -20,7 +20,7 @@ import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
-class IndexControllerTest {
+public class IndexControllerTest {
 
     @Mock
     RecipeService recipeService;
@@ -31,14 +31,14 @@ class IndexControllerTest {
     IndexController indexController;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         MockitoAnnotations.openMocks(this);
 
         indexController = new IndexController(recipeService);
     }
 
     @Test
-    void testMockMVC() throws Exception {
+    public void testMockMVC() throws Exception {
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(indexController).build();
 
         mockMvc.perform(get("/"))
@@ -47,7 +47,7 @@ class IndexControllerTest {
     }
 
     @Test
-    void getIndexPage() {
+    public void getIndexPage() {
 
         //given
         Set<Recipe> recipes = new HashSet<>();

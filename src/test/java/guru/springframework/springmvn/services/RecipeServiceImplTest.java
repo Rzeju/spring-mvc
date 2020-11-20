@@ -14,7 +14,7 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class RecipeServiceImplTest {
+public class RecipeServiceImplTest {
 
     RecipeServiceImpl recipeService;
 
@@ -22,14 +22,14 @@ class RecipeServiceImplTest {
     RecipeRepository recipeRepository;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         MockitoAnnotations.openMocks(this);
 
         recipeService = new RecipeServiceImpl(recipeRepository);
     }
 
     @Test
-    void getRecipes() {
+    public void getRecipes() {
 
         Recipe recipe = new Recipe();
         HashSet<Recipe> recipeData = new HashSet<>();

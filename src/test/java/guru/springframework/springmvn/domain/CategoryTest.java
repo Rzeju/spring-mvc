@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CategoryTest {
+public class CategoryTest {
 
     Category category;
 
@@ -16,7 +16,7 @@ class CategoryTest {
 
 
     @Test
-    void getId() {
+    public void getId() {
         Long idValue = 4L;
 
         category.setId(4L);
@@ -25,7 +25,7 @@ class CategoryTest {
     }
 
     @Test
-    void getDescription() {
+    public void getDescription() {
         String someDescription = "Some description!";
 
         category.setDescription(someDescription);
@@ -34,6 +34,6 @@ class CategoryTest {
     }
 
     @Test
-    void getRecipes() {
+    public void getRecipes() {
     }
 }
